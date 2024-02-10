@@ -1,56 +1,57 @@
 
-# Facial Mask Detection Project
+# Face Mask Detection Project
 
-## Overview
-In the wake of global health concerns, the ability to automatically detect facial mask usage in public spaces has become more crucial than ever. This project leverages cutting-edge image processing techniques to discern between individuals wearing masks correctly, incorrectly, or not at all. Utilizing Python, OpenCV, and machine learning algorithms, we aim to contribute to safer public health practices through technology.
+## Project Overview
+This project aims to develop a machine learning model capable of detecting face masks in images. It focuses on identifying whether individuals are wearing masks, not wearing masks, or wearing masks incorrectly. Given the global need to enhance public health measures, this tool can be instrumental in monitoring adherence to mask-wearing guidelines in various settings.
+
+## Features
+- **Data Preprocessing**: Includes grayscale conversion, resizing, and flattening of images, followed by label extraction from XML annotations.
+- **Dimensionality Reduction**: Utilizes Principal Component Analysis (PCA) to reduce feature space dimensionality while retaining significant variance.
+- **Model Training and Evaluation**: Employs multiple classifiers, including RandomForestClassifier, KNeighborsClassifier, Support Vector Machine (SVM) with various kernels, and LogisticRegression, to identify the most effective model based on precision, recall, and F1-score metrics.
 
 ## Getting Started
 
 ### Prerequisites
-Before diving into the mask detection project, ensure you have the following tools and libraries installed:
-- Python 3.x
-- OpenCV for image processing
-- NumPy for numerical calculations
-- scikit-learn for machine learning operations
-
-Install all necessary Python packages with this simple command:
-```bash
-pip install numpy opencv-python scikit-learn
-```
+- Python 3.6+
+- Libraries: NumPy, OpenCV, scikit-learn, TensorFlow/Keras (for neural network models)
 
 ### Installation
-Clone this repository to your local machine to get started:
+Clone the repository to your local machine:
 ```bash
-git clone [repository URL]
+git clone https://github.com/alizade34/FaceMaskDetection.git
+cd face-mask-detection
 ```
-Navigate into the project directory:
+
+Install the required Python packages:
 ```bash
-cd [project name]
+pip install -r requirements.txt
 ```
 
-## How to Use
-This project is structured to be as straightforward as possible:
+### Dataset
+The dataset consists of images with corresponding XML annotations that label each image as 'with mask', 'without mask', or 'mask weared incorrect'. Images should be placed in a `dataset/images` directory, and annotations in `dataset/annotations`.
 
-1. **Prepare Your Dataset**: Place your images in the `dataset/images` directory and annotations in `dataset/annotations`. Ensure annotations are in XML format and adhere to the parsing logic in the script.
-2. **Execute the Script**: Run the main script to process the images, perform feature extraction, and apply PCA for dimensionality reduction, preparing the data for model training.
-
-A snippet to get you started with loading images and labels:
-```python
-images, labels = load_images_and_labels('dataset/images', 'dataset/annotations', (64, 64))
+## Usage
+Run the main script to train the models and evaluate their performance:
+```bash
+python main.py
 ```
 
-## Contributing to the Project
-We warmly welcome contributions from the community. Whether it's improving the code, refining the documentation, or suggesting new features, your input is highly valued. Please follow these steps to contribute:
-1. Fork the repository.
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the branch (`git push origin feature/AmazingFeature`).
-5. Open a Pull Request.
+## Models Evaluated
+- RandomForestClassifier
+- KNeighborsClassifier
+- SVC (with linear, RBF, and polynomial kernels)
+- LogisticRegression
+
+## Results
+The project includes a detailed analysis of each classifier's performance, emphasizing accuracy, precision, recall, and F1-scores. Based on the evaluation, LogisticRegression was identified as the most effective model, offering a balanced performance across different classes.
+
+## Contributing
+Contributions to improve the model or extend its functionality are welcome. Please refer to CONTRIBUTING.md for guidelines.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
+Distributed under the MIT License. See `LICENSE` for more information.
 
-## Contact Us
-Should you have any questions or encounter issues, please feel free to open an issue in the repository, or reach out to us directly through our contact information provided in the repository.
+## Contact
+Emil Alizada - emilalizada0@gmail.com
 
-Let's make public spaces safer, together.
+Project Link: [https://github.com/alizade34/FaceMaskDetection](https://github.com/alizade34/FaceMaskDetection)
