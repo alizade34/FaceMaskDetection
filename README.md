@@ -19,7 +19,7 @@ This project aims to develop a machine learning model capable of detecting face 
 Clone the repository to your local machine:
 ```bash
 git clone https://github.com/alizade34/FaceMaskDetection.git
-cd face-mask-detection
+cd FaceMaskDetection
 ```
 
 Install the required Python packages:
@@ -55,4 +55,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 - Emil Alizada - emilalizada0@gmail.com
 - Muhammad Zubair Ahmed Khan - zubairkhan1997@gmail.com
 
-Project Link: [https://github.com/alizade34/FaceMaskDetection](https://github.com/alizade34/FaceMaskDetection)
+## Project Links
+- [https://github.com/alizade34/FaceMaskDetection](https://github.com/alizade34/FaceMaskDetection)
+- [https://github.com/zuba1rkhan/FaceMaskDetection.git](https://github.com/zuba1rkhan/FaceMaskDetection)
