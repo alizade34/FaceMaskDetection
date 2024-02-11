@@ -52,8 +52,7 @@ Contributions to improve the model or extend its functionality are welcome. Plea
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
-Emil Alizada - emilalizada0@gmail.com
-## 
-Muhammad Zubair Ahmed Khan - zubairkhan1997@gmail.com
+- Emil Alizada - emilalizada0@gmail.com
+- Muhammad Zubair Ahmed Khan - zubairkhan1997@gmail.com
 
 Project Link: [https://github.com/alizade34/FaceMaskDetection](https://github.com/alizade34/FaceMaskDetection)
